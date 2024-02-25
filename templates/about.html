@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{{ kiosk.city }}</h1>
+<h2>IceCreams:</h2>
+<ul>
+  {% for icecream in icecreams %}
+  <li>{{ icecream.name }} - {{icecream.price}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
